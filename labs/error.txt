@@ -1,0 +1,82 @@
+PS D:\Ucheba\TMO\lab2> pip install gmdh --find-links https://www.lfd.uci.edu/~gohlke/pythonlibs/
+>>
+Looking in links: https://www.lfd.uci.edu/~gohlke/pythonlibs/
+Collecting gmdh
+  Using cached gmdh-1.0.3.tar.gz (14.4 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting docstring_inheritance (from gmdh)
+  Using cached docstring_inheritance-2.2.2-py3-none-any.whl.metadata (11 kB)
+Collecting numpy (from gmdh)
+  Using cached numpy-2.2.4-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Using cached docstring_inheritance-2.2.2-py3-none-any.whl (24 kB)
+Using cached numpy-2.2.4-cp312-cp312-win_amd64.whl (12.6 MB)
+Building wheels for collected packages: gmdh
+  Building wheel for gmdh (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+
+  × Building wheel for gmdh (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [31 lines of output]
+      C:\Users\Volodya\AppData\Local\Temp\pip-build-env-a8vi2ifw\overlay\Lib\site-packages\setuptools\dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+
+              License :: OSI Approved :: Apache Software License
+
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.      
+              ********************************************************************************
+
+      !!
+        self._finalize_license_expression()
+      running bdist_wheel
+      running build
+      running build_py
+      creating build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\gmdh.py -> build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\version.py -> build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\__init__.py -> build\lib.win-amd64-cpython-312\gmdh
+      running egg_info
+      writing gmdh.egg-info\PKG-INFO
+      writing dependency_links to gmdh.egg-info\dependency_links.txt
+      writing requirements to gmdh.egg-info\requires.txt
+      writing top-level names to gmdh.egg-info\top_level.txt
+      reading manifest file 'gmdh.egg-info\SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE.md'
+      writing manifest file 'gmdh.egg-info\SOURCES.txt'
+      creating build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\gmdh.py -> build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\version.py -> build\lib.win-amd64-cpython-312\gmdh
+      copying gmdh\__init__.py -> build\lib.win-amd64-cpython-312\gmdh
+      running egg_info
+      writing gmdh.egg-info\PKG-INFO
+      writing dependency_links to gmdh.egg-info\dependency_links.txt
+      writing requirements to gmdh.egg-info\requires.txt
+      writing top-level names to gmdh.egg-info\top_level.txt
+      reading manifest file 'gmdh.egg-info\SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE.md'
+      writing manifest file 'gmdh.egg-info\SOURCES.txt'
+      copying gmdh\__init__.py -> build\lib.win-amd64-cpython-312\gmdh
+      running egg_info
+      writing gmdh.egg-info\PKG-INFO
+      writing dependency_links to gmdh.egg-info\dependency_links.txt
+      writing requirements to gmdh.egg-info\requires.txt
+      writing top-level names to gmdh.egg-info\top_level.txt
+      reading manifest file 'gmdh.egg-info\SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE.md'
+      writing manifest file 'gmdh.egg-info\SOURCES.txt'
+      writing manifest file 'gmdh.egg-info\SOURCES.txt'
+      running build_ext
+      error: [WinError 2] Не удается найти указанный файл
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for gmdh
+Failed to build gmdh
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (gmdh)
